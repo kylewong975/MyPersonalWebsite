@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ 
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<!-- Set the page to the width of the device and set the zoom level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<meta name="description" content="Kyle Wong's personal website. Enjoy!">
+<meta name="author" content="Kyle Wong">
+
+<title>Kyle Wong</title>
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto|Droid+Sans|Ubuntu">
+<!--My CSS-->
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/personalwebsite.js" async></script>
+<script src="js/jquery.easing.min.js" async></script>
+
+</head>
+
+
+<body id="page-top">
+
+<!--Responsive NavBar with dropdown (for mobile devices) -->
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Kyle Wong</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="page-scroll dropbtn" href="#projects">Portfolio <img src="img/dropdown.png" id="droparrow" class="img-responsive pull-right" alt=""/></a>
+                        <!--div rather than ul to properly adjust
+                        the spacing in the dropdown-content-->
+                        <div class="dropdown-content">
+                          <a href="projects.html">Projects</a>
+                          <a href="doc/Resume.pdf" target="_blank">Re&#769;sume&#769;</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+  </nav>
+
+  <!--Home section-->
+  <header id="intro">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <hr>
+                <h1 class="title-header">Kyle Wong</h1>
+                <hr>
+                <div>
+                  <h2><p class="shadow-left">Programmer</p></h2>
+                  <h2><p class="shadow-left">Project Developer</p></h2>
+                  <h2><p class="shadow-left">Indie Game Developer<span class="blink">_</span></p></h2>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <a href="doc/Resume.pdf" target="_blank" class="btn btn-primary btn-lg" id="resumebtn">My Re&#769;sume&#769;</a>
+                <p style = "text-align: right;">Stargazing<br>Made using ROBLOX Studio</p>
+            </div>
+        </div>
+  </header>
+
+  <!--About Me section-->
+  <section id="about">
+        <div class="container">
+          <h2 style="text-align:center;" class="title-header"><b>About Me</b></h2><hr>
+          <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+              <img src="img/me_circle.jpg" id="personalportrait" class="img-responsive pull-left" alt="Responsive image"/>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-12" id="bio">
+              <p><b>Name:</b> Kyle Wong</p>
+              <p><b>Education:</b> University of California, Los Angeles: pursing Bachelor of Science degree in Computer Science. (2016-Present)</p>
+              <p><b>Previous Education: </b>Troy High School: Fullerton, CA. Valedictorian, 4.00 GPA unweighted (2012-2016)
+              <p><b>Hobbies:</b> Game development, solving computer science challenges, reading, playing the piano and guitar, traveling</p>
+              <p><b>Statement:</b> I have a passion for initiating, collaborating, and completing projects, such as computer games and applications, software, robotics, and other technology that are entertaining and useful for others around the world. I am a quick and eager learner who strives to put 100% of my abilities and effort to achieve goals that are extremely challenging yet enriching.</p>
+            </div>
+          </div>
+          <hr style="border-top: dotted 1px;"/>
+          <p class="about-cap" style="font-size:16px; margin-left:-5px;">Here are some pictures that describe several bits (or some bytes) of who I am</p>
+          <div class="row no-gutter popup-gallery">
+                <div class="col-sm-4" style="text-align:center;">
+                    <div class="about-box sec1">
+                        <img src="img/about_me/progfest.jpg" class="img-responsive" alt="Progfest 2016">
+                        <p class="about-cap">My team ("desTROYers") at California State University, Los Angeles for the <a href="http://progfest.calstatela.edu:8080/progfest/scoreboard.html?year=2016" target="_blank" class="custom-a1">Progfest programming competition</a>. From left to right: <a href="http://joominyeo.me" target="_blank" class="custom-a1">Cai Yeo</a>, William Lee, Kyle Wong.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="text-align:center;">
+                    <div class="about-box sec1">
+                        <img src="img/about_me/fbla2015.jpg" class="img-responsive" alt="FBLA Computer Game &amp; Simulation Programming 2015">
+                        <p class="about-cap">My team for the FBLA Computer Game &amp; Simulation Programming Competition in the 2015 National Leadership Conference. From left to right: Alyssa Deng, Kyle Wong, Hao Chen.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="text-align:center;">
+                    <div class="about-box sec1">
+                        <img src="img/about_me/hiking_hawaii.JPG" class="img-responsive" alt="Hiking">
+                        <p class="about-cap">Code is beautiful; nature is beautiful; I am beautiful. Picture taken in Hawaii. #hiking</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutter popup-gallery">
+                <div class="col-sm-4" style="text-align:center;">
+                    <div class="about-box sec2">
+                        <img src="img/about_me/balloontwisting.jpg" class="img-responsive" alt="Balloon Twisting">
+                        <p class="about-cap">Twisting balloons for Harvest Night at my local church.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="text-align:center;">
+                    <div class="about-box sec2">
+                        <img src="img/about_me/archery.JPG" class="img-responsive" alt="Archery">
+                        <p class="about-cap">Learning archery. Precision is important for consistency, but accuracy is the goal.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="text-align:center;">
+                    <div class="about-box sec2">
+                        <img src="img/about_me/run_5k.JPG" class="img-responsive" alt="Running">
+                        <p class="about-cap">Completed the 5k. Current goal: finish the 10k within an hour.</p>
+                    </div>
+                </div>
+        </div>
+  </section>
+
+  <!--Skills section-->
+  <section id="skills">
+    <div class="container-fluid">
+      <h2 style="text-align: center;" class="title-header-contact"><b>Skills</b></h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-default shadow-box">
+            <div class="panel-heading" style="text-align:center;"><b>Programming Languages</b></div>
+            <div class="panel-body">
+              Java
+              <span class="label label-success2" style="float:right;">Advanced</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              C/C++
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              C#
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              Python
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              Lua
+              <span class="label label-warning" style="float:right;">Intermediate</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              R
+              <span class="label label-danger" style="float:right;">Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default shadow-box">
+            <div class="panel-heading" style="text-align:center;"><b>Mobile Development</b></div>
+            <div class="panel-body">
+              Android
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              iOS
+              <span class="label label-warning" style="float:right;">Intermediate</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default shadow-box">
+            <div class="panel-heading" style="text-align:center;"><b>Miscellaneous</b></div>
+            <div class="panel-body">
+              Unity 3D
+              <span class="label label-success2" style="float:right;">Advanced</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              ROBLOX Studio
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              Git
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              Paint.NET
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              Blender
+              <span class="label label-warning" style="float:right;">Intermediate</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              Networks/<br>Cybersecurity
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default shadow-box">
+            <div class="panel-heading" style="text-align:center;"><b>Web Development (Front-End)</b></div>
+            <div class="panel-body">
+              HTML
+              <span class="label label-success2" style="float:right;">Advanced</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              CSS
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              JavaScript
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default shadow-box">
+            <div class="panel-heading" style="text-align:center;"><b>Web Development (Back-End)</b></div>
+            <div class="panel-body">
+              SQL
+              <span class="label label-danger" style="float:right;">Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default shadow-box">
+            <div class="panel-heading" style="text-align:center;"><b>Languages</b></div>
+            <div class="panel-body">
+              English
+              <span class="label label-success2" style="float:right;">Advanced</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              Cantonese
+              <span class="label label-success2" style="float:right;">Advanced</span>
+            </div><hr class="gray-line restrict-top-bottom">
+            <div class="panel-body">
+              Spanish
+              <span class="label label-success" style="float:right;">Proficient</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Projects section-->
+  <section id="projects">
+      <div class="container-fluid">
+            <h2 style="text-align:center;" class="title-header"><b>Project Portfolio</b></h2><hr>
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/projects/vr.jpg" class="img-responsive" alt="Virtual Reality Implementation of Darwin Robot">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    RoMeLa Lab Project [June 2016 - Present]<hr>
+                                </div>
+                                <div class="project-name">
+                                    Virtual Reality Implementation of Darwin Robot
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/projects/server-showdown.png" class="img-responsive" alt="Server Showdown">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Game Development [January 2016 - April 2016]<hr>
+                                </div>
+                                <div class="project-name">
+                                    Server Showdown
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/projects/a-breach-in-the-system.png" class="img-responsive" alt="A Breach in the System">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Game Development [January 2015 - August 2015]<hr>
+                                </div>
+                                <div class="project-name">
+                                    A Breach in the System
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/projects/stargazing.png" class="img-responsive" alt="Stargazing Telescope Rendering">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Lua Scripting Project [June 2014 - August 2014]<hr>
+                                </div>
+                                <div class="project-name">
+                                    Telescope 3D UI Rendering with Lua
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/projects/office-scramble.png" class="img-responsive" alt="Office Scramble">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Game Development [January 2014 - March 2014]<hr>
+                                </div>
+                                <div class="project-name">
+                                    Office Scramble
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/projects/impressionate-fountain.png" class="img-responsive" alt="Impressionate Fountain">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    3D Modeling Project [December 2013]<hr>
+                                </div>
+                                <div class="project-name">
+                                    Impressionate Fountain
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div>
+                <h3>For a detailed list of my projects, click on the button below.</h3>
+                <a href="projects.html" class="btn btn-default btn-lg sr-button" id="projects-button">My Projects</a>
+            </div>
+        </div>
+  </section>
+
+  <!--Contact me section-->
+  <section id="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="title-header-contact">Contact Info</h2><hr class="dark-line">
+                    <p id="contact-text">Feel free to contact me if you are interested in my projects, want to talk about computer science/software engineering, or simply want to have a conversation with me. I am very friendly and enjoy meeting new people!</p>
+                    <hr class="dark-line">
+                </div>
+            </div>
+            <div id="email-stuff">
+                <p>Email: <a href="mailto:kyle.wong975@gmail.com" target="_top" class="custom-a">kyle.wong975@gmail.com</a></p>
+            </div>
+            
+            <hr class="dark-line">
+            <div id="social-media-icons" class="row">
+                <a href="https://www.facebook.com/kylewong975" target="_blank" class="social-icons"><img src="img/social_media/facebook.png" class="hover-spin" alt="Facebook"/></a>
+                <a href="https://www.linkedin.com/in/kylewong975" target="_blank" class="social-icons"><img src="img/social_media/linkedin.png" class="hover-spin" alt="LinkedIn"/></a>
+                <a href="https://github.com/kylewong975" target="_blank" class="social-icons"><img src="img/social_media/github.png" class="hover-spin" alt="Github"/></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.sec1', { duration: 600}, 100);
+      sr.reveal('.sec2', { duration: 600}, 100);
+      sr.reveal('.portfolio-box', { duration: 1200}, 200);
+      sr.reveal('.sr-button', { duration: 1000, delay: 200});
+      sr.reveal('.social-icons', { duration: 600, scale: 0.3}, 200);
+    </script>
+
+    <!--Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-83004009-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>

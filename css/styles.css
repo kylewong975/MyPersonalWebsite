@@ -34,6 +34,10 @@ a, a:active, a:focus{
   max-width: 12px;
   max-height: 12px;
   margin-top: 2px;
+  margin-left: 5px;
+  font-size: 0;
+  position: relative;
+  text-align: right;
 }
 
 #resumebtn{
@@ -64,11 +68,12 @@ a, a:active, a:focus{
   background-position: center;
   background-repeat: no-repeat;
   color: rgba(229,229,234,255);
+  font-weight: 100;
   width: 100%;
 }
 
 #bio{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Josefin+Sans', sans-serif;
   font-size: 16px;
 }
 
@@ -244,6 +249,12 @@ a, a:active, a:focus{
   text-shadow: 3px 3px 12px rgba(211,211,211,1);
 }
 
+.bg-desc{
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .about-cap{
   font-family: 'Ubuntu', sans-serif;
   font-size: 12px;
@@ -306,6 +317,11 @@ a, a:active, a:focus{
   padding-right: 0;
   padding-left: 0;
 }
+
+.more-proj-details{
+  padding-bottom: 10px;
+}
+
 .contact-detail{
   text-align: left;
 }
@@ -389,8 +405,9 @@ Section for projects.html
 .proj-top
 {
   padding-top: 50px; 
-  padding-left: 10px; 
-  padding-right: 10px;  
+  padding-left: 15px; 
+  padding-right: 15px;
+  text-align: center; 
 }
 
 .top-border
@@ -425,16 +442,33 @@ Section for projects.html
   font-size: 14px;
 }
 
+.proj-area{
+  border: 3px solid rgba(99,99,99,0.3);
+}
+
+.proj-area-alt{
+  background-color: rgba(155,155,155,0.2);
+}
+
+.placeholder{
+  padding-top: 50px;
+}
+
 @media screen and (max-width: 992px)
 {
   #personalportrait{
-  border-radius: 50%;
-  border: 2px solid;
-  border-color: rgba(229,229,234,255);
-  max-height: 290px;
-  max-width: 275px;
-  width: 50%;
-  margin-left: 27%;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: rgba(229,229,234,255);
+    max-height: 290px;
+    max-width: 275px;
+    width: 50%;
+    margin-left: 27%;
+  }
+
+  .portfolio-box{
+    max-width: 400px;
+  }
 }
 @media screen and (max-width: 768px)
 {
@@ -490,5 +524,20 @@ Section for projects.html
   .dropdown-content a:hover{
     color: rgba(40,40,40,1);
     text-decoration: none;
+  }
+
+  .skill-sum{
+    font-size: 24px;
+  }
+
+  .bg-desc{
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    font-size: 12px;
+  }
+
+  .more-proj-details{
+    font-size: 16px;
   }
 }

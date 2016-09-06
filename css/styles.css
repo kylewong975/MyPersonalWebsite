@@ -30,16 +30,6 @@ a, a:active, a:focus{
   color: rgba(229,229,234,255);
 }
 
-#droparrow{
-  max-width: 12px;
-  max-height: 12px;
-  margin-top: 2px;
-  margin-left: 5px;
-  font-size: 0;
-  position: relative;
-  text-align: right;
-}
-
 #resumebtn{
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -207,14 +197,14 @@ a, a:active, a:focus{
   display: block;
 }
 
-.dropdown:hover #droparrow{
+.dropdown:hover .caret{
   -webkit-animation:half-spin 0.2s;
   -moz-animation:half-spin 0.2s;
   animation:half-spin 0.2s;
   animation-fill-mode: forwards;
 }
 
-.dropdown #droparrow{
+.dropdown .caret{
   -webkit-animation:unhalf-spin 0.2s;
   -moz-animation:unhalf-spin 0.2s;
   animation:unhalf-spin 0.2s;
@@ -348,6 +338,14 @@ a, a:active, a:focus{
   color: rgba(0,180,180,255);
 }
 
+.caret{
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7.5px solid rgba(0,0,0,1);
+}
+
 .hover-spin{
   position: relative;
   border-radius: 50%;
@@ -371,13 +369,31 @@ a, a:active, a:focus{
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-@-moz-keyframes half-spin { 100% { -moz-transform: rotate(180deg); } }
-@-webkit-keyframes half-spin { 100% { -webkit-transform: rotate(180deg); } }
-@keyframes half-spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+@-moz-keyframes half-spin { 
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(180deg); } 
+}
+@-webkit-keyframes half-spin { 
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(180deg); } 
+}
+@keyframes half-spin { 
+  from { -webkit-transform: rotate(0deg); transform:rotate(0deg); }
+  to { -webkit-transform: rotate(180deg); transform:rotate(180deg); } 
+}
 
-@-moz-keyframes unhalf-spin { 100% { -moz-transform: rotate(-720deg); } }
-@-webkit-keyframes unhalf-spin { 100% { -webkit-transform: rotate(-720deg); } }
-@keyframes unhalf-spin { 100% { -webkit-transform: rotate(-720deg); transform:rotate(-720deg); } }
+@-moz-keyframes unhalf-spin { 
+  from { -moz-transform: rotate(180deg); } 
+  to { -moz-transform: rotate(0deg); } 
+}
+@-webkit-keyframes unhalf-spin { 
+  from { -webkit-transform: rotate(180deg); } 
+  to { -webkit-transform: rotate(0deg); } 
+}
+@keyframes unhalf-spin { 
+  from { -webkit-transform: rotate(180deg); transform:rotate(180deg); } 
+  to { -webkit-transform: rotate(0deg); transform:rotate(0deg); } 
+}
 
 .blink{
   animation: blink 1s infinite;

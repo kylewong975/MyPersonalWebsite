@@ -341,8 +341,8 @@ a, a:active, a:focus{
 .caret{
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
   border-top: 7.5px solid rgba(0,0,0,1);
 }
 
@@ -499,7 +499,7 @@ Section for projects.html
     font-size: 16px;
   }
 
-  #droparrow{
+  .caret{
     display: none;
   }
 

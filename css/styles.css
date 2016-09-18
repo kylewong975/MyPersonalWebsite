@@ -488,9 +488,14 @@ Section for projects.html
 }
 @media screen and (max-width: 768px)
 {
+  #bio{
+    font-family: 'Josefin+Sans', sans-serif;
+    font-size: 14px;
+  }
+
   #contact-text{
-  font-size: 14px;
-  color: rgba(0,0,0,255);
+    font-size: 14px;
+    color: rgba(0,0,0,255);
   }
 
   #email-stuff{
